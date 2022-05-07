@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #780206;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font: 16px Arial, sans-serif;
+    color: white;
+    overflow: auto;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+button {
+    height: 2em;
+    padding: 0 0.5em;
+    border: none;
+    border-radius: 10px;
+    font: 20px Arial, sans-serif;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    align-items: flex-start;
+    text-align: center;
+    transition: 100ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font: 40px Arial, sans-serif;
+}
+
+button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.hb {
+    text-align: center;
+}
+
+img {
+    outline: none;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow: auto;
+}
+
+.game-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
