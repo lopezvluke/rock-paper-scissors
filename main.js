@@ -33,12 +33,12 @@ function checkWinner() {
         // tie
         document.querySelector("h1").style.color = "yellow";
     }
-    else if ((playerOneChoice == 0 && playerTwoChoice == 2) || playerOneChoice > playerTwoChoice) {
+    else if ((playerTwoChoice + 1) % 3 == playerOneChoice) {
         document.querySelector("h1").style.color = "green";
         playerOneScore++;
         document.getElementById("you-score").textContent = "You: " + playerOneScore;
     }
-    else {
+    else if ((playerOneChoice + 1) % 3 == playerTwoChoice) {
         document.querySelector("h1").style.color = "red";
         playerTwoScore++;
         document.getElementById("ai-score").textContent = "AI: " + playerTwoScore;
